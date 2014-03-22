@@ -1,40 +1,69 @@
 <!DOCTYPE html>
 <html lang="en" manifest="cache.manifest">
-    <head>
-        <title>Kevins Cards Tester</title>
-        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <title>Kevins Cards Tester</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <link rel="kik-icon" href="img/KMLogo.jpeg">
-        <!-- Styles -->
-        <link rel="stylesheet" href="css/app.css?inline=1">
-        <link rel="stylesheet" href="css/styles.css?inline=1">
-        <link rel="stylesheet" href="css/page-home.css?inline=1">
-    </head>
-    <body>
-        <div class="app-page home-page" data-page="home">
-            <div class="app-content" data-no-scroll='false'>
-                <div class="text-box">
-                    <textarea class="app-input input-box" placeholder="Type URL Here"></textarea>
-                </div>
-                <div class="app-button webpage-button"><span class="button-text">open Webpage in popup</span></div>
-                <div class="app-button isBadge-execute-button"><span class="button-text">isBadgeVisible</span></div>
-                <div class="app-button true-execute-button"><span class="button-text">Set Visibility to True</span></div>
-                <div class="app-button false-execute-button"><span class="button-text">Set Visibility to False</span></div>
-                <div class="result-section">
-                    <div class="sync-result output">Sync Result</div>
-                </div>
-
-            </div>
+    <link rel="kik-icon" href="img/KMLogo.jpeg">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/app.css?inline=1">
+    <link rel="stylesheet" href="css/styles.css?inline=1">
+    <link rel="stylesheet" href="css/page-home.css?inline=1">
+    <link rel="stylesheet" href="css/page-badge.css?inline=1">
+  </head>
+  <body>
+    <div class="app-page" data-page="home">
+      <div class="app-content">
+        <div class="app-section home">
+          <div class="home-text">Kevin's Cards Tester</div>
         </div>
+        <div class="app-section">
+          <div class="app-button home badge" data-target="badge">Badge Tests</div>
+          <div class="app-button home popup" data-target="popup">Open in Popup</div>
+        </div>
+      </div>
+    </div>
 
+    <div class="app-page" data-page="badge">
+      <div class="app-topbar badge">
+        <div class="app-title main">Badge</div>
+        <div class="app-button back left">Back</div>
+      </div>
+      <div class="app-content">
+        <div class="app-section">
+          <div class="app-button isBadge-execute-button"><span class="button-text">isBadgeVisible</span></div>
+          <div class="app-button true-execute-button"><span class="button-text">Set Visibility to True</span></div>
+          <div class="app-button false-execute-button"><span class="button-text">Set Visibility to False</span></div>
+        </div>
+        <div class="app-section">
+          <div class="sync-result output">Sync Result</div>
+        </div>
+      </div>
+    </div>
 
-        <!-- Scripts -->
-        <script type="text/javascript" src="zerver/API.js"></script>
-        <script type="text/javascript" src="js/kik.js?inline=1"></script>
-        <script type="text/javascript" src="js/app.js?inline=1"></script>
-        <script type="text/javascript" src="js/page-home.js?inline=1"></script>
-        <script type="text/javascript" src="js/main.js?inline=1"></script>
-    </body>
+    <div class="app-page" data-page="popup">
+      <div class="app-topbar popup">
+        <div class="app-title main">Popup Mode</div>
+        <div class="app-button back left">Back</div>
+      </div>
+      <div class="app-content" data-no-scroll='false'>
+        <div class="text-box">
+          <textarea class="app-input input-box" placeholder="Type URL Here"></textarea>
+        </div>
+        <div class="app-button webpage-button"><span class="button-text">open Webpage in popup</span></div>
+
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="zerver/API.js"></script>
+    <script type="text/javascript" src="js/kik.js?inline=1"></script>
+    <script type="text/javascript" src="js/app.js?inline=1"></script>
+    <script type="text/javascript" src="js/page-home.js?inline=1"></script>
+    <script type="text/javascript" src="js/page-badge.js?inline=1"></script>
+    <script type="text/javascript" src="js/page-popup.js?inline=1"></script>
+    <script type="text/javascript" src="js/main.js?inline=1"></script>
+  </body>
 
 
 </html>

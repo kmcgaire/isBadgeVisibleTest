@@ -10,3 +10,7 @@
     border-right: 2px solid #DDD;
     border-bottom: 2px solid #DDD;
 }
+
+.app-topbar {
+    background-color: forestgreen;
+}
